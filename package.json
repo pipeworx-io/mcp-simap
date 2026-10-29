@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-simap",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "simap MCP — Swiss public procurement tenders and awards (keyless).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-simap": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "simap"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-simap.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/simap",
   "pipeworx": {
-    "sourceHash": "v1-184767a1f93b1d340e62ce23d888ea394b4b560823554dae2ba1342cfd7062f0",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "mode": "gateway",
+    "slug": "simap",
+    "gatewaySlug": "simap",
+    "sourceHash": "v1-01a009c63b23dde9271d7108773592d6ffdc945c94b871e85d88cec61871b778",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
