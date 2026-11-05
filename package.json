@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-simap",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "simap MCP — Swiss public procurement tenders and awards (keyless).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "simap",
     "gatewaySlug": "simap",
-    "sourceHash": "v1-01a009c63b23dde9271d7108773592d6ffdc945c94b871e85d88cec61871b778",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-5e96216c44474edaf2b02bc552a04d871d420f2d7ebf8aff98d0d89c20376010",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
